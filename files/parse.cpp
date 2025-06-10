@@ -21,7 +21,7 @@ int PE32(char* Buffer, DWORD NT_ADD_HEADER,uint8_t bit) {
 }
 
 int PE64(char* Buffer, DWORD NT_ADD_HEADER, uint8_t bit) {
-    //uint8_t bit = 4;
+    //uint8_t bit = 8;
     printf("\n\n***NT_ADDITIONAL_FIELDS***");
     printf("\nNT_ADDITIONAL_FIELDS_OFFSET: 0x%x", NT_ADD_HEADER);
     uint64_t imagebase = *(uint64_t*)(Buffer + NT_ADD_HEADER);
